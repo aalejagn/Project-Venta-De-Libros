@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SISTEC READ - Contáctanos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <nav class="main-nav">
             <div class="nav-container">
                 <div class="logo">
-                    <h1>SISTEC READ</h1>
+                    <span>SISTEC READ</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Inicio</a></li>
@@ -31,18 +31,18 @@
 
     <main>
         <div class="container">
-            <h1 class="page-title">Contáctanos</h1>
             <section class="contact-section">
+                <h1>Contáctanos</h1>
                 <article>
                     <h2 class="categoria-titulo">Envíanos tu consulta</h2>
                     <p>En SISTEC READ, nuestro compromiso es conectar a los lectores con los libros que aman. Completa el formulario para cualquier consulta, sugerencia o seguimiento de pedidos. ¡Te responderemos pronto!</p>
                     <form action="#" method="post" class="contact-form">
                         <label for="nombre">Nombre completo:</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" pattern="[A-Za-z\s]{2,50}" title="Solo letras y espacios, entre 2 y 50 caracteres">
-                        
+
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
-                        
+
                         <label for="tipo-consulta">Tipo de consulta:</label>
                         <select id="tipo-consulta" name="tipo-consulta" required>
                             <option value="" disabled selected>Selecciona una opción</option>
@@ -51,10 +51,10 @@
                             <option value="sugerencias">Sugerencias</option>
                             <option value="otro">Otro</option>
                         </select>
-                        
+
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí" maxlength="500"></textarea>
-                        
+
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </article>
