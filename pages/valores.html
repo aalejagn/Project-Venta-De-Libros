@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visión</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span>SISTEC READ</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="reseñas.html" class="active">Reseñas</a></li>
+                <li><a href="#footer">Informacion Adicional</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Buscador con botón de buscar -->
+    <div class="search-container">
+        <input type="search" placeholder="Buscar libros por título o autor..." class="search-input" id="searchInput">
+        <button type="button" class="search-button" onclick="buscarLibros()">Buscar</button>
+    </div>
+</header>
+
+<main>
+    <!--Ahora crearemos el cuerpo para nuuestros dato de visión-->
+    <div class="container">
+        <section class="about-section">
+            <h1 class="page-title">Valores</h1>
+            <article>
+                <h2 class="vision-titulo">Nuestros Valores</h2>
+                <ol id="list-ordenada-valores" class="list-ordenada-valores">
+                    <li class="list-valores"> <strong> Accesibilidad:</strong> Promovemos la lectura como un derecho de todos, garantizando precios justos y disponibilidad para cualquier público.</li>
+                    <li class="list-valores"> <strong>Pasión por la lectura:</strong> Creemos en el poder de los libros para transformar vidas y compartimos esa pasión con cada cliente. </li>
+                    <li class="list-valores"> <strong>Compromiso comunitario:</strong> Estamos profundamente vinculados con Chiapas y buscamos fortalecer su cultura lectora.</li>
+                    <li class="list-valores"> <strong>Diversidad e inclusión:</strong>  Ofrecemos un catálogo amplio que responde a diferentes intereses, edades y contextos.</li>
+                    <li class="list-valores"> <strong>Innovación educativa: </strong>Buscamos constantemente nuevas formas de acercar la literatura como herramienta de aprendizaje.</li>
+                    <li class="list-valores"> <strong>Integridad y confianza: </strong>Actuamos con transparencia, honestidad y responsabilidad en cada aspecto de nuestra gestión.</li>
+                    <li class="list-valores"> <strong>Calidad en el servicio: </strong> Nos esforzamos por brindar atención cercana, profesional y personalizada a cada lector.</li>
+                </ol>
+                <div class="images-container">
+                    <div class="card-valor">
+                    <img src="https://i.pinimg.com/736x/09/ee/50/09ee50371068b85174bbb7e7c0982dc2.jpg" class="libro-valores">
+                    <p class="text-valor">Calidad en el servicio</p>
+                    </div>
+                    <div class="card-valor">
+                    <img src="https://i.pinimg.com/736x/77/41/13/77411399ad06bf6a097597c4eaa2b471.jpg" class="libro-valores">
+                    <p class="text-valor">Pasión por la lectura</p>
+                    </div>
+                    <div class="card-valor">
+                    <img src="https://i.pinimg.com/1200x/17/35/0b/17350b4247a4ec56d8026060ef909a14.jpg" class="libro-valores">
+                    <p class="text-valor">Diversidad e inclusión</p>
+
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </div>
+</main>
+
+<!-- Pie de página con información adicional -->
+<section id="footer">
+    <footer>
+
+        <div class="footer-container">
+            <h4>Información Adicional</h4>
+            <!--Columnas para footer-->
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h5>SISTEC READ</h5>
+                    <ul>
+                        <li><a href="acerca_de.html">NOSOTROS</a></li>
+                        <li><a href="ubicacion.html">UBICACIÓN</a></li>
+                    </ul>
+                </div>
+                <!--Columnas para footer-->
+                <div class="footer-column">
+                    <h5>SERVICIO AL CLIENTE</h5>
+                    <ul>
+                        <li><a href="contactanos.html">CONTACTO</a></li>
+                        <li><a href="">POLÍTICAS DE PRIVACIDAD</a></li>
+                        <li><a href="">TÉRMINOS Y CONDICIONES</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Sobre nosotros</h5>
+                    <ul>
+                        <li><a href="mision.html">MISIÓN</a> </li>
+                        <li><a href="vision.html">VISIÓN</a> </li>
+                        <li><a href="valores.html">VALORES</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; 2025 SISTEC READ. Todos los derechos reservados.</p>
+                <p>Promoviendo la lectura y el conocimiento en nuestra comunidad.</p>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

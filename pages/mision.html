@@ -2,14 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEC READ - Contáctanos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Misión</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <!-- Buscador con botón de buscar -->
 
         <nav class="main-nav">
             <div class="nav-container">
@@ -24,6 +22,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- Buscador con botón de buscar -->
         <div class="search-container">
             <input type="search" placeholder="Buscar libros por título o autor..." class="search-input" id="searchInput">
             <button type="button" class="search-button" onclick="buscarLibros()">Buscar</button>
@@ -31,51 +30,24 @@
     </header>
 
     <main>
+    <!--Ahora crearemos el cuerpo para nuuestros dato de mision-->
         <div class="container">
-            <section class="contact-section">
-                <h1>Contáctanos</h1>
+            <section class="about-section">
+                <h1 class="page-title">Misión</h1>
                 <article>
-                    <h2 class="categoria-titulo">Envíanos tu consulta</h2>
-                    <p>En SISTEC READ, nuestro compromiso es conectar a los lectores con los libros que aman. Completa el formulario para cualquier consulta, sugerencia o seguimiento de pedidos. ¡Te responderemos pronto!</p>
-                    <form action="#" method="post" class="contact-form">
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" pattern="[A-Za-z\s]{2,50}" title="Solo letras y espacios, entre 2 y 50 caracteres">
-
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
-
-                        <label for="tipo-consulta">Tipo de consulta:</label>
-                        <select id="tipo-consulta" name="tipo-consulta" required>
-                            <option value="" disabled selected>Selecciona una opción</option>
-                            <option value="informacion">Información sobre libros</option>
-                            <option value="pedidos">Seguimiento de pedidos</option>
-                            <option value="sugerencias">Sugerencias</option>
-                            <option value="otro">Otro</option>
-                        </select>
-
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí" maxlength="500"></textarea>
-
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    <h2 class="mision-titulo">SISTEC READ</h2>
+                    <p>Nuestra misión es democratizar el acceso a la literatura ofreciendo libros de calidad a precios accesibles. Creemos firmemente que la lectura es una herramienta esencial para el aprendizaje, la reflexión y el crecimiento personal. Por ello, trabajamos para inspirar a nuestros lectores, fomentar la comprensión lectora y acercar la literatura a todos los sectores de la sociedad chiapaneca, convirtiendo cada libro en una oportunidad de descubrir nuevos mundos y conocimientos.</p>
+                    <img src="https://i.pinimg.com/1200x/30/c1/14/30c114d5393509e97ed1e01d3332502a.jpg" class="libro-mision">
                 </article>
-                <aside>
-                    <h3>Otras formas de contacto</h3>
-                    <ul>
-                        <li><strong>Correo:</strong> <a href="mailto:info@sistecread.com">info@sistecread.com</a></li>
-                        <li><strong>Teléfono:</strong> <a href="tel:+529611234567">+52 (961) 123-4567</a></li>
-                        <li><strong>Redes sociales:</strong>
-                            <ul>
-                                <li><a href="https://facebook.com/sistecread" target="_blank">Facebook</a></li>
-                                <li><a href="https://twitter.com/sistecread" target="_blank">Twitter</a></li>
-                                <li><a href="https://instagram.com/sistecread" target="_blank">Instagram</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <aside >
+                    <h3>Inspiración Literaria</h3>
+                    <p>La lectura transforma, inspira y abre caminos.
+                        En <strong>SISTEC READ</strong>, cada historia tiene el poder de cambiar vidas y despertar nuevas perspectivas. Queremos que cada página que leas te acerque un poco más a ti mismo y al mundo que te rodea</p>
                 </aside>
             </section>
         </div>
     </main>
+
 
     <!-- Pie de página con información adicional -->
     <section id="footer">
