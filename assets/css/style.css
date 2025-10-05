@@ -30,7 +30,6 @@ header {
     text-align: center;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    margin-bottom: 1rem;
 }
 
 .search-input {
@@ -66,6 +65,17 @@ header {
     padding: 0 2rem;
 }
 
+.logo span{
+    font-size:32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    display: inline-flex;  /* Asegura que esté en una sola línea */
+    align-items: center;              /* Centra verticalmente logo y texto */
+    gap: 10px;                        /* Espacio entre el logo y el texto */
+    margin: 0;                        /* Evita saltos extra */
+    vertical-align: middle;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -74,10 +84,28 @@ header {
     margin: 0 auto;
 }
 
+
+
 .logo h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    display: inline-flex;  /* Asegura que esté en una sola línea */
+    align-items: center;              /* Centra verticalmente logo y texto */
+    gap: 10px;                        /* Espacio entre el logo y el texto */
+    margin: 0;                        /* Evita saltos extra */
+    vertical-align: middle;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.logo-imagen {
+    display: inline-block; /* Fuerza comportamiento en línea */
+    width: 100px;                      /* Tamaño ideal de logo */
+    height: 100px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border-radius: 8px;          /* Bordes suaves (opcional) */
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.419); /* Un toque visual */
+    /*background-color: #d6535357;*/
 }
 
 .nav-menu {
@@ -523,6 +551,7 @@ main {
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
+
 .welcome-text {
     flex: 2;
 }
@@ -747,7 +776,7 @@ main {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #ffcf3e, #f1a445);
     color: white;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
@@ -1163,6 +1192,7 @@ main {
 
 /* === ESTILOS PARA CONTACTANOS.HTML === */
 .contact-section {
+    font-family:tahoma ;
     display: flex;
     gap: 2rem;
     margin-bottom: 4rem;
@@ -1235,6 +1265,7 @@ main {
     font-size: 0.95rem;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
+    font-family: tahoma;
 }
 
 .contact-form input:focus,
@@ -1460,6 +1491,7 @@ iframe {
 }
 /* === ESTILOS PARA RESEÑAS.HTML === */
 .reviews-section {
+    font-family: tahoma;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -1517,6 +1549,7 @@ iframe {
 }
 
 .review-form-section {
+    font-family: tahoma;
     margin-top: 4rem;
     background: white;
     border-radius: 15px;
@@ -1526,8 +1559,9 @@ iframe {
 }
 
 .review-form {
-    max-width: 600px;
+    max-width: 600px;   
     margin: 1.5rem auto 0;
+    font-family: tahoma;
 }
 
 .review-form label {
