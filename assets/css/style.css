@@ -1,3 +1,15 @@
+/*=== Manejo de paleta de colores con variables CSS === */
+:root{
+    --color-primario: #ff6b6b; /*Color principal (rojo coral)*/
+    --color-sercundario: #667eea; /*Color secundario azul morado*/
+    --color-acento: #f1c40f; /*Color de acento amarillo*/
+    --color-fondo: #f5f5f5; /*Fondo general*/
+    --color-texto: #333; /*Texto Principal*/
+    --color-texto-secundario: #666; /* Texto secundario*/
+    --color-fondo-secundario: #f8f9fa; /*Fondo Secundario*/
+}
+
+
 /* === ESTILOS GENERALES === */
 * {
     margin: 0;
@@ -10,6 +22,11 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
+}
+main {
+    flex: 1;  /* Permite que main crezca y ocupe espacio */
+    min-height: 70vh;  /* Mínimo de 70% de la altura de la ventana para asegurar que empuje el footer */
+    padding-bottom: 2rem;  /* Espacio extra en la parte inferior para que el contenido se sienta más largo */
 }
 
 
@@ -541,6 +558,10 @@ main {
 
 .welcome-image {
     flex: 1;
+}
+
+.welcome-section:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .hero-image {
@@ -1281,6 +1302,18 @@ main {
     min-height: 100px;
 }
 
+/* === Uso de selectores avanzados (atributos y hermanos) ===*/
+.contact-form input[type="text"],
+.contact-form input[type="email"]{
+    background-color: var(--color-fondo-secundario);
+    border: 1px solid #e0e0e0
+}
+
+.contact-section h2 + p{
+    margin-top: 0.5rem; /*Estilo para parrafos inmediamente despues de h2*/
+    color: var(--color-texto-secundario);
+}
+
 .contact-section {
     margin-bottom: 4rem;
     background: white;
@@ -1415,19 +1448,26 @@ main {
     color: #666;
 }
 
+/*Alejandro: uso de variable*/
+
 .location-table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
-    background: #f8f9fa;
+    background: var(--color-fondo-secundario); /*Uso De Variable*/
     border-radius: 8px;
     overflow: hidden;
 }
+    /* ===Uso de pseudoclase :nth-child===*/
+    .location-section tr:nth-child(even){
+        background-color:#e9ecef ; /*Color alternativo para filas pares*/
+    }
+
 
 .location-table caption {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #333;
+    color: var(--color-texto);
     margin-bottom: 0.5rem;
 }
 
@@ -1439,7 +1479,7 @@ main {
 }
 
 .location-table th {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, var(--color-sercundario), #764ba2);
     color: white;
 }
 
@@ -1727,8 +1767,7 @@ iframe {
     max-width: 250px;
     transition: transform 0.3s ease;
 }
-.libro-valores{
-
+.libro-valores {
     width: 250px;
     height: 300px;
     border-radius: 12px;
@@ -1736,6 +1775,8 @@ iframe {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .text-valor{
+    font-family: Tahomaa;
+    font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
     text-align: center;
@@ -1762,7 +1803,7 @@ iframe {
 .card-valor:hover .text-valor {
     opacity: 1;
     transform: translateY(0);
-    color: #ff6600; /* cambia color al pasar el mouse */
+    color: #d900ff; /* cambia color al pasar el mouse */
 }
 
 
